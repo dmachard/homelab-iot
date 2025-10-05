@@ -1,8 +1,26 @@
 # homelab-iot
+A simple display dashboard based on **OpenWeatherMap** and **Prometheus**.
 
-Code for ESP and Raspberry Pi devices in the homelab.
-To start, clone this Git repository
+## 🧩 Features
+- Shows current weather and hourly / daily forecasts
+- Electrical consumption in kVA via Prometheus
+- Automatic refresh
 
+[dashboard](./img/dashboard.png)
+
+## ⚙️ Configuration
+
+Create a file `assets/config.js` with your local configuration, for example:
+```js
+window.CONFIG = {
+  API_KEY: "YOUR_OPENWEATHERMAP_API_KEY",
+  CITY: "YOUR_CITY",
+  UNITS: "metric",
+  LOCALE: "fr",
+  PROMETHEUS_URL: 'https://prometheus/api/v1/query?query=linky_tic_standard_sinsts',
+  CONSO_REFRESH: 10000,
+  WEATHER_REFRESH: 10
+};
 
 ## 🧭 Setting Up Chromium Kiosk Mode on Raspberry Pi
 

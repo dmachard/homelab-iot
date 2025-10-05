@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+<title>Météo — Tableau</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="left">
+      <div class="date" id="date">—</div>
+    </div>
+    <div class="right">
+      <div class="time" id="time">--:--</div>
+      <div style="margin-left:12px;">
+        <label for="lang-select" class="sr-only">Language</label>
+        <select id="lang-select" aria-label="Language">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="weather-row">
+      <div class="card current-weather">
+        <div class="desc" id="desc">—</div>
+        <div class="temp-row">
+          <div id="icon-wrap">
+            <img class="icon" id="icon" src="" alt="icone météo">
+          </div>
+          <div class="big-temp" id="temp">--°C</div>
+        </div>
+        <div class="feels" id="feels_temp"></div>
+        <div class="feels" id="feels_hum"></div>
+      </div>
+      <div class="card forecast-card">
+        <div class="forecast-header">
+          <div class="forecast-title">Prévisions</div>
+          <div class="updated">MAJ: <span id="updated">--</span></div>
+        </div>
+        <div class="sub-forecast">
+          <div class="hourly-scroll" id="hourly-forecast">
+            <!-- heures insérées ici -->
+          </div>
+           <div class="forecast" id="forecast">
+            <!-- jours insérés ici -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="footer-blocks">
+        <div id="conso-elec" class="footer-block conso-elec">
+          <span class="conso-label">Conso élec</span>
+          <span id="conso-val" class="conso-val">-- kVA</span>
+        </div>
+        <div class="footer-block">
+          <span class="conso-label">Bloc 2</span>
+          <span class="conso-val">--</span>
+        </div>
+        <div class="footer-block">
+          <span class="conso-label">Bloc 3</span>
+          <span class="conso-val">--</span>
+        </div>
+        <div class="footer-block">
+          <span class="conso-label">Bloc 4</span>
+          <span class="conso-val">--</span>
+        </div>
+        <div class="footer-block">
+          <span class="conso-label">Bloc 5</span>
+          <span class="conso-val">--</span>
+        </div>
+        <div class="footer-block">
+          <span class="conso-label">Bloc 6</span>
+          <span class="conso-val">--</span>
+        </div>
+        <div class="footer-block">
+          <span class="conso-label">Bloc 7</span>
+          <span class="conso-val">--</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
