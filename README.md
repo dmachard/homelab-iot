@@ -1,14 +1,16 @@
 # homelab-iot
+Code for ESP and Raspberry Pi devices in the homelab.
+To start, clone this Git repository
+
+## HomeDash
+
 A simple display dashboard based on **OpenWeatherMap** and **Prometheus**.
 
-## 🧩 Features
 - Shows current weather and hourly / daily forecasts
 - Electrical consumption in kVA via Prometheus
 - Automatic refresh
 
-[dashboard](./img/dashboard.png)
-
-## ⚙️ Configuration
+<img src="./img/dashboard.png" alt="dashboard"/>
 
 Create a file `assets/config.js` with your local configuration, for example:
 ```js
@@ -21,8 +23,9 @@ window.CONFIG = {
   CONSO_REFRESH: 10000,
   WEATHER_REFRESH: 10
 };
+```
 
-## 🧭 Setting Up Chromium Kiosk Mode on Raspberry Pi
+## Setting Up Chromium Kiosk Mode on Raspberry Pi
 
 
 Your directory should now contain the scripts, for example:
