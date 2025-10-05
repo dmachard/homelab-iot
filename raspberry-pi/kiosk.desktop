@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Chrome Kiosk
+Exec=/home/pi/kiosk.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
